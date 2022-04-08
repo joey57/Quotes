@@ -1,13 +1,16 @@
-#del,#delete{
+#delete{
   font-size: 20px;
   float: right;
   margin-right: 2%;
 }
+#del{
+  float: right;
+}
 #like{
-  font-size: 12px;
+  font-size: 16px;
 }
 #dislike{
-  font-size: 12px;
+  font-size: 16px;
 }
 .hate{
   margin-left: 10px;
@@ -18,5 +21,6 @@ hr{
   background-color: darkcyan;
 }
 #button{
+  margin-top: 5%;
   margin-bottom: 10%;
 }

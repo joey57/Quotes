@@ -4,9 +4,10 @@
     <div *ngFor="let quote of quotes;let i = index" class="card" style="width: 21rem;">
       <div class="card-body">
         <h4 class="card-title">{{quote.title}}</h4>
+        <p class="card-text" id="param">{{quote.quote}}</p>
         <app-quote-detail *ngIf="quote.showInfo" [quoty]="quote" (isRead)="quoteDelete($event,i)"></app-quote-detail>
         <span class="card-subtittle mb-2">Posted by:<span id="name">{{quote.name}}</span><span id="date">  on: <span id="datecolor">{{quote.datePosted|date}}</span></span></span>
-        <button (click)="toggle(i)" class="btn btn-success"> See More</button>
+        <button (click)="toggle(i)" class="btn btn-success"> See More </button>
         
       </div>
     

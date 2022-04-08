@@ -5,11 +5,9 @@
 }
 #del{
   float: right;
-}
-#like{
   font-size: 16px;
 }
-#dislike{
+#hate{
   font-size: 16px;
 }
 .hate{

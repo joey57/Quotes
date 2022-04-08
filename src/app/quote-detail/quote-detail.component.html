@@ -1,7 +1,8 @@
 <p class="card-text" id="param">{{quoty.quote}}</p>
-<h6 class="card-subtitle mb-2 text"> - {{quoty.author}} </h6>
+<h6 class="card-subtitle mb-2 text"> - {{quoty.author}}</h6>
+<p>Posted: {{quoty.datePosted|dateCount}} days ago.</p>
 <div class="container-fluid" id="buttons">
-  <button class="btn btn-sm hate" id="hate"><i class="fa-solid fa-thumbs-up" id="like"></i>Like</button>
-  <button class="btn btn-sm hate" id="del"><i class="fa-solid fa-thumbs-down" id="dislike"></i>Dislike</button>
-  <button class="btn btn-md btn-danger" id="del" (click)="deleteQuote(true)"><i class="fa-solid fa-trash"></i>Delete</button>
+  <button class="btn btn-sm hate" id="hate">Like</button>
+  <button class="btn btn-sm hate" id="del">Dislike</button>
+  <button class="btn btn-md btn-danger" id="del" (click)="deleteQuote(true)">Delete</button>
   </div>

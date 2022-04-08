@@ -6,6 +6,12 @@ h1{
   padding-bottom: 2%;
   padding-top: 2%;
 }
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+}
+span{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 #name{
   color: rgb(212, 65, 89);
 }

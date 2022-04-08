@@ -13,6 +13,12 @@ export class QuoteDetailComponent implements OnInit {
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
+  upvote(index){
+    this.quoty.likes+=1;
+  }
+  downvote(index){
+    this.quoty.dislikes+=1;
+  }
 
   constructor() { }
 

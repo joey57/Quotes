@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   title = 'Wise Words Quotes';
   quotes: Quote[]=[
-    new Quote(1,'Charles','Human spirit','The human spirit must prevail over technology.','Albert Einstein', new Date(2022,8,12)),
-    new Quote (2,'Wendy','Technology…','Technology… the knack of so arranging the world that we dont have to experience it.','Max Frisch', new Date(2022,7,14)),
-    new Quote (3,'Michael','The great myth','The great myth of our times is that technology is communication.','Libby Larsen',new Date(2022,6,3)),
-    new Quote(4,'Allan','Communication','Communications tools dont get socially interesting until they get technologically boring.','Clay Shirky',new Date(2022,8,7)),
-    new Quote(5,'Theodore','Code','Programs must be written for people to read, and only incidentally for machines to execute.','Harold Abelson',new Date(2022,8,17)),
-    new Quote(6,'Fallon','Tech','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn', new Date(2022,7,15)),
+    new Quote(1,'Charles','Human spirit','The human spirit must prevail over technology.','Albert Einstein', new Date(2022,8,12),0,0),
+    new Quote (2,'Wendy','Technology…','Technology… the knack of so arranging the world that we dont have to experience it.','Max Frisch', new Date(2022,7,14),0,0),
+    new Quote (3,'Michael','The great myth','The great myth of our times is that technology is communication.','Libby Larsen',new Date(2022,6,3),0,0),
+    new Quote(4,'Allan','Communication','Communications tools dont get socially interesting until they get technologically boring.','Clay Shirky',new Date(2022,8,7),0,0),
+    new Quote(5,'Theodore','Code','Programs must be written for people to read, and only incidentally for machines to execute.','Harold Abelson',new Date(2022,8,17),0,0),
+    new Quote(6,'Fallon','Tech','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn', new Date(2022,7,15),0,0),
   ];
 
   quoteDelete(isRead, index){

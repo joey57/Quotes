@@ -17,6 +17,15 @@ export class QuoteComponent implements OnInit {
     new Quote(6,'Fallon','Technology and life','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn'),
   ];
 
+  quoteDelete(isRead, index){
+    if(isRead){
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].title}?`)
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+    }
+  }
+
   toggle(index){
     this.quotes[index].showInfo = !this.quotes[index].showInfo;
   }

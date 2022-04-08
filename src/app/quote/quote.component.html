@@ -1,14 +1,16 @@
 <div class="container overlay" style="text-align: center;">
   <h1> {{ title | titlecase}}</h1>
   <div class="all-cards">
-    <div *ngFor="let quote of quotes" class="card" style="width: 21rem;">
+    <div *ngFor="let quote of quotes;let i = index" class="card" style="width: 21rem;">
       <div class="card-body">
         <h4 class="card-title">{{quote.title}}</h4>
         <p class="card-text">{{quote.quote}}</p>
         <h6 class="card-subtitle mb-2 text-muted"> - {{quote.author}}</h6>
-        <app-quote-detail bind-quoty="quote"></app-quote-detail>
+        <!-- <app-quote-detail bind-quoty="quote"></app-quote-detail>
         <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span></span>
-        <button class="btn btn-info btn-sm" id="quotes-button">See Quote</button>
+        <button class="btn btn-info btn-sm" id="quotes-button">See Quote</button> -->
+        <app-quote-detail *ngIf="quote.showInfo" [quoty]="quote"></app-quote-detail>
+        <button (click)="toggle(i)"></button>
       </div>
     
     </div>

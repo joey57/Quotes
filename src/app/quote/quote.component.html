@@ -1,10 +1,10 @@
 <div class="container overlay" style="text-align: center;">
   <h1> {{ title | titlecase}}</h1>
   <div class="all-cards">
-    <div *ngFor="let quote of quotes;let i = index" class="card" style="width: 21rem;">
+    <div *ngFor="let quote of quotes;let i = index" class="card" style="width: 24rem;">
       <div class="card-body">
+        <h3 class="card-text text-success" id="param">{{quote.quote}}</h3>
         <h4 class="card-title">{{quote.title}}</h4>
-        <p class="card-text" id="param">{{quote.quote}}</p>
         <app-quote-detail *ngIf="quote.showInfo" [quoty]="quote" (isRead)="quoteDelete($event,i)"></app-quote-detail>
         <span class="card-subtittle mb-2">Posted by:<span id="name">{{quote.name}}</span><span id="date">  on: <span id="datecolor">{{quote.datePosted|date}}</span></span></span>
         <button (click)="toggle(i)" class="btn btn-success"> See More </button>

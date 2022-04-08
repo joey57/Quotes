@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  title = 'Wise Words Quotes';
+  title = 'Wise Quotes';
   quotes: Quote[]=[
     new Quote(1,'Charles','Human spirit','The human spirit must prevail over technology.','Albert Einstein', new Date(2022,8,12),0,0),
     new Quote (2,'Wendy','Technology…','Technology… the knack of so arranging the world that we dont have to experience it.','Max Frisch', new Date(2022,7,14),0,0),

@@ -7,6 +7,7 @@
 This is an Angular CLI application that displays quotes, the author and allows users to like or dislike a quote as well as add their own.
 
 ## Live page
+* (https://joey57.github.io/Quotes/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
